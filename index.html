@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <title>Azimoh's portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style2.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/style2.css">
+       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     </head>
     <body>
 
@@ -147,6 +151,26 @@
                         <h2>Projects</h2>
                       </div>
                       <div class="content-body">
+                         
+                        <!-- CARD #0 -->
+                    
+                        <div class="project-card" >
+                        
+                            <div class="project-image">
+                              <img src="images/support2.PNG">
+                            </div>
+                            <div class="project-content">
+                              <h4>Full Stack project</h4>
+                                  <p> 
+                                      <b>Tools:</b> JavaScript, Vue.js, Express.js & CSS.
+                                      <br>Using Vue.js for frontend, Express.js for backend and Javascript, I contributed to the development of a web application that helps a Park organisation’s management with tracking the progress of support staff and
+                                       allow staff to report the time progress for their tasks. It is also a platform for incidents to be reported and making sure the support staff are taking care of it.
+  
+                                  </p>
+                              <a></a>
+                            </div>
+                        </div>  
+                                       
                         <!-- CARD #1 -->
                         <div class="project-card" >
                           <div class="project-image">
@@ -156,7 +180,7 @@
                             <h4>Decisions-support-System for Cameras and Lenses</h4>
                                 <p> 
                                     <b>Tools:</b> Java, Swing, MSQL, CSS.
-                                    Designed a desktop application that handles queries for selecting and filtering the available cameras with and without a given lens type. I utilized swing for the development of the GUI and MSQL is used for the database management.
+                                    <br>Designed a desktop application that handles queries for selecting and filtering the available cameras with and without a given lens type. I utilized swing for the development of the GUI and MSQL is used for the database management.
 
                                 </p>
                             <a href="https://github.com/AzimohA/CamGearDss">https://github.com/AzimohA/CamGearDss</a>
@@ -171,7 +195,7 @@
                             <h4>Android Remote Controlled Car: </h4>
                                 <p>
                                     <b>Tools:</b> Java, C++, Android, Arduino, Raspberry PI <br />
-                                    Contributed to the development of an android application for controlling a mini vehicle based on Arduino, and also developed the mini vehicle: Arduino smart Car which was connected to application using TCP/IP protocol.
+                                    <br>Contributed to the development of an android application for controlling a mini vehicle based on Arduino, and also developed the mini vehicle: Arduino smart Car which was connected to application using TCP/IP protocol.
 
                                 </p>
                             <a href="https://github.com/garzoc/Arduino ">Source code</a>
@@ -186,7 +210,7 @@
                             <h4><b>Self-driving RC Car </b></h4>
                             <p>
                                 <b>Tools: C++, OpenDAVINCI, OpenCV </b> <br />
-                                Developed an autonomous vehicle with the capabilities of lane-following, self-parking and overtaking. This was realized using OpenDAVINCI, most of the programming was done C++.
+                                <br>Developed an autonomous vehicle with the capabilities of lane-following, self-parking and overtaking. This was realized using OpenDAVINCI, most of the programming was done C++.
                             </p>
                             <a href="https://github.com/emanuelmellblom/opendlv.scaledcars">Source code</a>
                           </div>
@@ -199,7 +223,7 @@
                               <h4><b>Thesis: Comment Quality Evaluator </b></h4>
                               <p>
                                   <b>Tools: Java, Standard coreNLP</b> <br />
-                                  ​In a team of 3 developers, we designed a Java based application that analyses the quality of code-comments in projects. We utilised Standard CorenNLP to handle the natural language processing,
+                                  <br>​In a team of 3 developers, we designed a Java based application that analyses the quality of code-comments in projects. We utilised Standard CorenNLP to handle the natural language processing,
                                   we analyse the quality of comments in source-code with the aid of metrics such as: Readability and Concurrency to determine the relevace and helpfulness of the comments in source code.
  
                               </p>
@@ -274,5 +298,32 @@
                 </div>
             </div>
         </div>
+
+        <script>
+
+            let stylesheets = [
+                
+            'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+            
+            ];
+
+            function createStylesheet( href ) {
+            let link = document.createElement('link');
+            link.type = 'text/css';
+            link.rel = 'stylesheet'
+            link.href = href;
+            return link;
+            }
+
+            // an array of stylesheet links 
+            const appendStylesheets = stylesheets.map(function (sheet) {
+            const createdLink = createStylesheet(sheet);
+            return createdLink;
+            });
+
+            appendStylesheets.forEach(function (link) {
+            document.getElementsByTagName('head')[0].appendChild(link);
+            });
+        </script>
     </body>
 </html>
