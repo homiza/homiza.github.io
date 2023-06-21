@@ -1,7 +1,10 @@
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Trirong", serif;
     background: rgba(242, 242, 242, .6);
     margin: 0;
+    border: none;
+    border-top: none;
+    padding: 0%;
   }
 
   /**/
@@ -13,7 +16,7 @@ body {
       background-color: #111;
       position: fixed;
       height: 100%;
-      overflow: auto;
+      overflow: hidden;
    
       
   }
@@ -26,6 +29,7 @@ body {
       font-size: 20px;
       outline: 0;
       text-align: right;
+    
   }
 
  .navlink a i{
@@ -42,17 +46,18 @@ body {
   
   .jumbotron {
     height: 100vh; /*height to 100% of view height*/
-    background: rgb(226, 181, 121); /*background color to blue*/
+    background: rgb(219, 217, 215); /*background color to blue*/
     margin-bottom: 0; /*no bottom margin*/
     display: flex;
     flex-direction: column;
+   
   }
   
   .jumbotron-text {
     /*TAGLINE UNDER NAME*/
     font-weight: 400;
     font-size: 2em;
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 250px;
   }
@@ -61,7 +66,7 @@ body {
     /*YOUR NAME*/
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0;
   }
   
@@ -81,7 +86,7 @@ body {
   }
   .social {
     font-size: 2em;
-    color: white;
+    color: black;
     padding: 20px;
   }
 
@@ -93,13 +98,15 @@ body {
   }
   
   #down-arrow a {
-    color: white;
+    color: black;
+    font-size: 2em;
   }
 
   .sidedview-container {
     /*sets up flexbox*/
     display: flex;
     flex-direction: column;
+  
   }
   
   .row {
@@ -196,13 +203,14 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 30px;
-		
+    padding: 0px;
+		padding-bottom: 30px;
   }
   .navbar img{
-    display: block;
+   /* display: block;
     border-radius: 200px;/*profile image*/
-    
+    border-radius: 0rem;
+    height: 18.5rem;
   }
   .profile-title{
     margin: 0;
@@ -230,14 +238,14 @@ body {
   }
   /*contact section*/
   .contact-section{
-        background: burlywood;
+        background: rgb(219, 217, 215);;
         text-align: center;
   }
 
   .contact-section h2{
     font-weight: 300;
     font-size: 2rem;
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
   }
@@ -303,8 +311,8 @@ body {
     border-radius: 14px;
     margin: 7px;
     padding: 5px 10px;
-    color: white;
-    background: rgb(226, 181, 121);
+    color: black;
+    background: rgb(219, 217, 215);
     list-style: none;
     cursor: default;
     font-size: 1.2em;
