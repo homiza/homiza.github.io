@@ -1,0 +1,21 @@
+
+body{
+    margin: 0;
+}
+.footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#horizontal-bar{
+    width: 70%;
+}
+
+.footer-navbar a{
+    
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
