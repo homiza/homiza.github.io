@@ -5,12 +5,23 @@ body{
     background-attachment: fixed;  
     background-size: cover;
 
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+   /*
     background-color: #121212;
     color: #FFFFFF;
     font-family: "Courier New", Courier, monospace;
-    
+    */
           
 }
+
+.special-elite-regular {
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .footer {
 
     position: absolute;
@@ -96,13 +107,15 @@ body{
 .header #logo {
  /* color: whitesmoke;*/
   font-size: 3rem;
-  font-family: "Brush Script MT", cursive; /*https://www.cssfontstack.com/Brush-Script-MT*/
+ /* font-family: "Brush Script MT", cursive; /*https://www.cssfontstack.com/Brush-Script-MT*/
+ font-family: "Special Elite", serif;
+ font-weight: 900;
 
   background-image: linear-gradient(
     -225deg,
-    #111111 0%,
-    #161313 29%,
-    #635e63 67%,
+    #fff 0%,
+    #fff 29%,
+    #8f848f 10%,
      #fff 100%
   );
  
@@ -140,18 +153,17 @@ body{
    /* display: flex;
     flex-direction: row;
    */
-   float: left;
-   width: 40%;
+   width: 100%;
+   align-items: center;
    
 }
 
 #body-txt h1 {
-    display: flex;
-    text-align: left;
+  /*  display: flex;*/
+    text-align: center;
     font-size: 8vh;
    
     color: aliceblue;
-    padding-left: 20%;
 }
 
 .mimg {
@@ -161,6 +173,7 @@ body{
 
  
 }
+/*
 
 #profile-img{
     top: -50px;
@@ -176,17 +189,17 @@ body{
    
     /*animation
     https://www.w3schools.com/css/css3_animations.asp
-    */
+    //
     animation-name: example;
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
  
 
-}
+}*/
 
 @keyframes example {
-    20%   { left:0px; top:0px;}
+   /* 20%   { left:0px; top:0px;}
     100%  {left:200px; top:0px;}
    /* 50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
