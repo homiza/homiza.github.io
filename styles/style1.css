@@ -225,3 +225,47 @@ body{
     align-items: center;
 
 }
+
+
+
+
+.softlogo{
+    
+    opacity: 0.6;
+    display: inline-block;
+    text-align: left;
+    height: auto;
+}
+
+.uxlogo{
+   
+     display: inline-block;
+     text-align: right;
+    height: auto;
+ 
+    }
+
+   .careerpath .uxlogo{
+    animation: blink 3s linear infinite;
+    }
+    
+    @keyframes blink{
+        25%{
+            opacity: 0.5;
+            }
+        50%{
+            opacity: 1.0;
+        }75%{
+            opacity: 0.5;
+        }
+    }
+
+    .softlogo:hover{
+        opacity: 1.0;
+    }
+
+
+.careerpath .softlogo:hover, .softlogo:focus{
+    transition: .2s;
+    transform: scale(1.15);
+}
