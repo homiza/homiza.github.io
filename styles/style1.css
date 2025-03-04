@@ -147,8 +147,35 @@ body{
 /*return home actinon*/
 
 .header #logo:hover{
-    color: grey;
+    color: gray;
 }
+/*test home icon button huover*/
+.home-button {
+    background: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+
+  home-button svg {
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    
+  }
+
+
+  .home-button:hover svg {
+    transform: scale(1.2);
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  /*  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);*/
+  }
+
+
+
+/*test close*/
+
+
 #body-txt {
    /* display: flex;
     flex-direction: row;
